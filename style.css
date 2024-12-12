@@ -2,13 +2,16 @@
     width: 60px;
     margin: 20px;
 }
-.side{
-    width: 20%;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+.title{
+    font-style: comic
 }
-.projects{
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 20px auto;
+}
+.project{
     margin: 30px;
     padding: 20px 40px;
     background-color: #ffffff;
@@ -16,58 +19,89 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: black;
 
-    transition-property:background-color ;
+    transition-property:background-color , color  ;
     transition-duration: 0.4s;
     transition-delay: 0s;
     transition-timing-function: ease;
 }
-.projects:hover {
-        background-color: #45a049;
+.project:hover {
+        background-color: #000000;
         color: white;
  }
 .blog{
     margin: 30px;
-    padding: 20px 40px;
+    padding: 20px 51px;
     background-color: white;
     color: black;
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: black;
 
-    transition-property:background-color ;
+    transition-property:background-color, color  ;
     transition-duration: 0.4s;
     transition-delay: 0s;
     transition-timing-function: ease;
 
 }
 .blog:hover{
-    background-color:#45a049 ;
+    background-color:#3a3a3a ;
     color: white;
 }
 .about{
     margin: 30px;
-    padding: 20px 40px;
+    padding: 20px 47px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 15px;
     cursor: pointer;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: black;
 
-    transition-property:background-color ;
+    transition-property:background-color, color  ;
     transition-duration: 0.4s;
     transition-delay: 0s;
     transition-timing-function: ease;
 }
 .about:hover{
-    background-color:#45a049 ;
+    background-color:black ;
     color: white;
 }
 
-.projects, .blog, .about {
+.project, .blog, .about {
 
     display: block;
-  
     margin-bottom: 10px;
   
-  }
+}
+.project-blocks{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+.block{
+    margin: 30px;
+    padding: 20px 47px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: black;
+    margin-right: 20px;
+}
